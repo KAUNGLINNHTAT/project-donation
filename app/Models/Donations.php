@@ -22,4 +22,11 @@ class Donations extends Model
         'confirm_id',
     ];
 
+    /**
+     * Get the user that confirm the donation.
+     */
+    public function getUser()
+    {
+        return $this->belongsTo(User::class, 'confirm_id', 'id');
+    }
 }

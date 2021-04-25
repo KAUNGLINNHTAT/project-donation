@@ -2,6 +2,6 @@
 
 return [
     'donation_type' => [
-        '0' => 'cdm',
+        '0' => 'CDM',
     ],
 ];

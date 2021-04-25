@@ -17,26 +17,26 @@ class DonationController extends Controller
         return view('donations.cdm');
     }
 
-    public function save(Request $request) 
+    public function save(Request $request)
     {
         $form = $request->except('_token');
         $form['type'] = 0; //CDM Donation
 
         $donations  = Donations::create($form);
         $encrypt_id = Crypt::encryptString($donations->id);
-        return redirect()->route('donations.certificate', ['id' => $encrypt_id ]);
+        return redirect()->route('donations.certificate', ['id' => $encrypt_id]);
     }
 
-    public function certificate($id) {
-
+    public function certificate($id)
+    {
         $decrypt_id = Crypt::decryptString($id);
         $donation = Donations::find($decrypt_id);
 
-        if($donation == "") {
+        if ($donation == "") {
             return "ERROR";
         }
- 
-        $certificate_url = route('donations.confirm', ['id' => $id ]);
+
+        $certificate_url = route('certificate.confirm', ['id' => $id]);
         $qr_code = QrCode::size('200')->format('svg')->generate($id);
         return view('donations.complete', compact('qr_code', 'id', 'certificate_url'));
     }
