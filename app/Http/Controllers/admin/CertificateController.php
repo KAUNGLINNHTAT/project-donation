@@ -30,8 +30,8 @@ class CertificateController extends Controller
         return view('webctrl.certificate.confirm', compact('donation', 'donation_type', 'id'));
     }
 
-    public function show($donation_id) 
-    {   
+    public function show($donation_id)
+    {
         $id = Crypt::encryptString($donation_id);
         $donation = Donations::find($donation_id);
         $donation_type = config('constants.donation_type');
@@ -60,7 +60,8 @@ class CertificateController extends Controller
         return redirect()->back()->with('msg', 'Confirm is completed');
     }
 
-    public function delete($id) {
+    public function delete($id)
+    {
         $donation = Donations::find($id);
         $donation->delete();
         return redirect()->back();
