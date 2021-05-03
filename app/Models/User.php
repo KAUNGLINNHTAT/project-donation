@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -9,7 +10,7 @@ use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
-    use HasFactory, Notifiable;
+    use HasFactory, Notifiable, SoftDeletes;
 
     /**
      * The attributes that are mass assignable.
@@ -56,9 +57,12 @@ class User extends Authenticatable
             $user = $user->searchRole($search_arr['role']);
         }
 
-        return $user->where('role', '<>', 'superadmin')->get();
+        return $user->notSuperAdminRole()->get();
     }
 
+    public function scopeNotSuperAdminRole($query) {
+        return $query->where('role', '<>', 'superadmin');
+    }
     /*
      * Search By Name
      */
@@ -69,14 +73,14 @@ class User extends Authenticatable
     /*
      * Search By Email
      */
-     public function scopeSearchEmail($query, $email) {
+    public function scopeSearchEmail($query, $email) {
         return $query->where('email', $email);
     }
 
     /*
      * Search By Role
      */
-     public function scopeSearchRole($query, $role) {
+    public function scopeSearchRole($query, $role) {
         return $query->whereIn('role', $role);
-     }
+    }
 }

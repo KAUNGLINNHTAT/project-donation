@@ -14,8 +14,9 @@ class AlterAddRoleToUser extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->enum('role', ['superadmin', 'admin', 'volunteer', 'user'])->default('user');
+            $table->enum('role', ['superadmin', 'admin', 'volunteer', 'supporter'])->default('supporter');
             $table->integer('status')->nullable()->default(0);
+            $table->softDeletes();
         });
     }
 
@@ -27,7 +28,9 @@ class AlterAddRoleToUser extends Migration
     public function down()
     {
         Schema::table('users', function (Blueprint $table) {
-            //
+            $table->dropColumn('role');
+            $table->dropColumn('status');
+            $table->dropColumn('deleted_at');
         });
     }
 }

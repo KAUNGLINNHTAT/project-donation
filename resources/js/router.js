@@ -7,6 +7,7 @@ import DonationComponent from './components/DonationComponent.vue';
 import MailComponent from './components/MailComponent.vue';
 import MemberComponent from './components/Member/MemberComponent.vue';
 import MemberAddComponent from './components/Member/MemberAddComponent.vue';
+import MemberEditComponent from './components/Member/MemberEditComponent.vue';
 
 Vue.use(VueRouter)
 const router = new VueRouter({
@@ -36,7 +37,12 @@ const router = new VueRouter({
             path: "/admin/member/add",
             name: "member-add",
             component: MemberAddComponent,
-        }
+        },
+        {
+            path: "/admin/member/:id/edit",
+            name: "member-edit",
+            component: MemberEditComponent
+        },
     ]
 });
 

@@ -18,7 +18,7 @@ class MemberController extends Controller
      */
     public function index()
     {
-        $user = User::where('role', '<>', 'superadmin')->get();
+        $user = User::notSuperAdminRole()->get();
         return MemberResource::collection($user);
     }
 
@@ -61,7 +61,8 @@ class MemberController extends Controller
      */
     public function show($id)
     {
-        //
+        $user = User::notSuperAdminRole()->where('id', $id)->first();
+        return new MemberResource($user);
     }
 
     /**
@@ -72,7 +73,8 @@ class MemberController extends Controller
      */
     public function edit($id)
     {
-        //
+        $user = User::notSuperAdminRole()->where('id', $id)->first();
+        return new MemberResource($user);
     }
 
     /**
@@ -84,7 +86,12 @@ class MemberController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $updateParam = [];
+        $updateParam['name']    = $request->input('name');
+        $updateParam['email']   = $request->input('email');
+        $updateParam['role']    = $request->input('role');
+        $updateParam['status']  = $request->input('status');
+        return User::notSuperAdminRole()->where('id', $id)->update($updateParam);
     }
 
     /**
@@ -95,6 +102,6 @@ class MemberController extends Controller
      */
     public function destroy($id)
     {
-        //
+        return User::notSuperAdminRole()->where('id', $id)->delete();
     }
 }

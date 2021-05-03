@@ -9,6 +9,6 @@ return [
         'superadmin' => 'Super Admin',
         'admin' => 'Admin',
         'volunteer' => 'Volunteer',
-        'user' => 'Member',
+        'supporter' => 'Supporter',
     ],
 ];
