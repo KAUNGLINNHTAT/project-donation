@@ -31,6 +31,7 @@
         "webpack": "^5.35.1"
     },
     "dependencies": {
+        "awesome-notifications": "^3.1.1",
         "vue-axios": "^3.2.4",
         "vue-router": "^3.5.1"
     }

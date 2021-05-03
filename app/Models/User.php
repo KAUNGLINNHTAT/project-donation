@@ -20,6 +20,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'role',
     ];
 
     /**
@@ -40,4 +41,42 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function searchUser($search_arr) {
+        $user = new User();
+        if(isset($search_arr['name']) && $search_arr['name'] != "") { //Search By Name
+            $user = $user->searchName($search_arr['name']);
+        }
+
+        if(isset($search_arr['email']) && $search_arr['email'] != "") { //Search By Name
+            $user = $user->searchEmail($search_arr['email']);
+        }
+
+        if(isset($search_arr['role']) && is_array($search_arr['role']) && count($search_arr['role']) > 0) { //Search By Name
+            $user = $user->searchRole($search_arr['role']);
+        }
+
+        return $user->where('role', '<>', 'superadmin')->get();
+    }
+
+    /*
+     * Search By Name
+     */
+    public function scopeSearchName($query, $name) {
+        return $query->where('name', 'LIKE', '%'.$name.'%');
+    }
+
+    /*
+     * Search By Email
+     */
+     public function scopeSearchEmail($query, $email) {
+        return $query->where('email', $email);
+    }
+
+    /*
+     * Search By Role
+     */
+     public function scopeSearchRole($query, $role) {
+        return $query->whereIn('role', $role);
+     }
 }

@@ -21,7 +21,7 @@ class DonationResource extends JsonResource
             'first_name' => $this->first_name,
             'last_name'  => $this->last_name,
             'email' => $this->email,
-            'donation_type' => isset($donation_type[$this->type]) ? $donation_type[$this->type] : "",
+            'donation_type' => isset($donation_type[$this->type]) ? $donation_type[$this->type] : "-",
             'confirm_flg' => $this->confirm_flg,
             'confirm_name' => $this->getUser->name ?? "-",
         ];

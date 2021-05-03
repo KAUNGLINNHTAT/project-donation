@@ -5,6 +5,8 @@ import VueRouter from 'vue-router'
 import DashboardComponent from './components/DashboardComponent.vue';
 import DonationComponent from './components/DonationComponent.vue';
 import MailComponent from './components/MailComponent.vue';
+import MemberComponent from './components/Member/MemberComponent.vue';
+import MemberAddComponent from './components/Member/MemberAddComponent.vue';
 
 Vue.use(VueRouter)
 const router = new VueRouter({
@@ -16,14 +18,24 @@ const router = new VueRouter({
             component: DashboardComponent,
         },
         {
-            path: "/donation",
+            path: "/admin/donation",
             name: "donation",
             component: DonationComponent,
         },
         {
-            path: "/mail",
+            path: "/admin/donation",
             name: "mail",
             component: MailComponent,
+        },
+        {
+            path: "/admin/member",
+            name: "member",
+            component: MemberComponent,
+        },
+        {
+            path: "/admin/member/add",
+            name: "member-add",
+            component: MemberAddComponent,
         }
     ]
 });

@@ -15,6 +15,7 @@ class AlterAddRoleToUser extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             $table->enum('role', ['superadmin', 'admin', 'volunteer', 'user'])->default('user');
+            $table->integer('status')->nullable()->default(0);
         });
     }
 

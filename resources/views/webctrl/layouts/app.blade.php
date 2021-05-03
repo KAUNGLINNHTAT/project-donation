@@ -21,6 +21,7 @@
     <div id="app">
         <div class="md:flex flex-col md:flex-row md:min-h-screen w-full">
             <header-component></header-component>
+            {{-- <navbar-component></navbar-component> --}}
             <router-view />
         </div>
     </div>
