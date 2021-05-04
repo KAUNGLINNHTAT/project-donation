@@ -9,6 +9,10 @@ import MemberComponent from './components/Member/MemberComponent.vue';
 import MemberAddComponent from './components/Member/MemberAddComponent.vue';
 import MemberEditComponent from './components/Member/MemberEditComponent.vue';
 
+import DonationListComponent from './components/donationlist/DonationListComponent.vue';
+import DonationListAddComponent from './components/donationlist/DonationListAddComponent.vue';
+import DonationListEditComponent from './components/donationlist/DonationListEditComponent.vue';
+
 Vue.use(VueRouter)
 const router = new VueRouter({
     mode: 'history',
@@ -42,6 +46,21 @@ const router = new VueRouter({
             path: "/admin/member/:id/edit",
             name: "member-edit",
             component: MemberEditComponent
+        }, 
+        {
+            path: "/admin/donation-list",
+            name: "donation-list",
+            component: DonationListComponent,
+        },
+        {
+            path: "/admin/donation-list/add",
+            name: "donation-list-add",
+            component: DonationListAddComponent,
+        },
+        {
+            path: "/admin/donation-list/:id/edit",
+            name: "donation-list-edit",
+            component: DonationListEditComponent
         },
     ]
 });

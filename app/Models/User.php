@@ -63,23 +63,18 @@ class User extends Authenticatable
     public function scopeNotSuperAdminRole($query) {
         return $query->where('role', '<>', 'superadmin');
     }
-    /*
-     * Search By Name
-     */
+
+    /* Search By Name */
     public function scopeSearchName($query, $name) {
         return $query->where('name', 'LIKE', '%'.$name.'%');
     }
 
-    /*
-     * Search By Email
-     */
+    /* Search By Email */
     public function scopeSearchEmail($query, $email) {
         return $query->where('email', $email);
     }
 
-    /*
-     * Search By Role
-     */
+    /* Search By Role */
     public function scopeSearchRole($query, $role) {
         return $query->whereIn('role', $role);
     }

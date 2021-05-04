@@ -48,20 +48,20 @@
                     </div>
                 
                     <div class="items-center w-full px-4 pt-2 pb-4 text-gray-800 inline-flex">
-                            <h2 class="mx-auto w-1/5 md:pl-2 sm:text-sm">Status</h2>
-                            <div class="mx-auto w-4/5">
-                                <div class="flex flex-row items-center">
-                                    <div class="flex flex-row">
-                                        <label class="inline-flex items-center ">
-                                            <input type="radio" v-model="member.status" value="0" class="h-5 w-5 text-green-600" :checked="member.status == 0"><span class="ml-2 text-gray-700">Active </span>
-                                        </label>
+                        <h2 class="mx-auto w-1/5 md:pl-2 sm:text-sm">Status</h2>
+                        <div class="mx-auto w-4/5">
+                            <div class="flex flex-row items-center">
+                                <div class="flex flex-row">
+                                    <label class="inline-flex items-center ">
+                                        <input type="radio" v-model="member.status" value="0" class="h-5 w-5 text-green-600" :checked="member.status == 0"><span class="ml-2 text-gray-700">Active </span>
+                                    </label>
 
-                                        <label class="inline-flex items-center ml-3">
-                                            <input type="radio" v-model="member.status" value="1" class="h-5 w-5 text-red-600" :checked="member.status == 1"><span class="ml-2 text-gray-700">Deactived</span>
-                                        </label>
-                                    </div>
+                                    <label class="inline-flex items-center ml-3">
+                                        <input type="radio" v-model="member.status" value="1" class="h-5 w-5 text-red-600" :checked="member.status == 1"><span class="ml-2 text-gray-700">Deactived</span>
+                                    </label>
                                 </div>
                             </div>
+                        </div>
                     </div>
                     <hr/>
                     <div class="w:full px-4 pb-4 mx-auto text-gray-500 text-center">

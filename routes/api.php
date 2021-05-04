@@ -21,3 +21,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::resource('donation', 'Api\DonationController');
 Route::resource('member', 'Api\MemberController');
 Route::post('member/search', 'Api\MemberController@search');
+
+Route::resource('donationlist', 'Api\DonationListController');
