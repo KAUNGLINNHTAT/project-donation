@@ -11,4 +11,11 @@ return [
         'volunteer' => 'Volunteer',
         'supporter' => 'Supporter',
     ],
+
+    'default_language' => 'en',
+    'support_language' => [
+        'en',
+        'ja-jp',
+        'mm',
+    ],
 ];

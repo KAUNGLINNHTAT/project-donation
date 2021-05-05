@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Middleware\TranslateLanguage;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,6 +16,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('index', [\App\Http\Controllers\IndexController::class, 'index'])->name('web.index')->middleware('translate');
+Route::get('gallery', [\App\Http\Controllers\IndexController::class, 'gallery'])->name('web.gallery')->middleware('translate');
+Route::get('about', [\App\Http\Controllers\IndexController::class, 'about'])->name('web.about')->middleware('translate');
+Route::get('contact', [\App\Http\Controllers\IndexController::class, 'contact'])->name('web.contact')->middleware('translate');
+
+Route::get('translate', [\App\Http\Controllers\IndexController::class, 'translate'])->name('web.translate');
 
 Route::get('donation/cdm', [\App\Http\Controllers\DonationController::class, 'cdm'])->name('donation.cdm');
 Route::post('donation/cdm', [\App\Http\Controllers\DonationController::class, 'save']);
