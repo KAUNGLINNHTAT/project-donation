@@ -38,6 +38,8 @@ return [
     ],
 
     "label" => [
+        "what_is_mdsg"  => "M D S Gとは",
+        "go_to_detail"  => "詳細",
         "donation_type" => "寄付種類",
         "donation_accept" => "個人支援と団体支援可能",
 
@@ -63,6 +65,14 @@ return [
         "issue_amount"  => "お決まり金額",
         "support_amount" => "支援金額",
         "total_amount" => "合計金額",
+
+        "label_1"   => "MDSG と称するミャンマー開発支援グープは在日ミャンマー人14名により立ち上げられたボランティアグループである。",
+        "label_2"   => "本グループは、2021年1日に発生した軍事によるクーデータの影響を受けた市民への支援を行うために同月5日に発足した。",
+        "label_3"   => "チームの構成及び活動内容は以下のレイアウトをご参照ください。",
+
+        "contact"   => "お問い合わせ",
+        "mail"      => "メール",
+        "follow_social" => "Please, follow our Social Media.",
     ],
 
     "about" => [
@@ -73,7 +83,7 @@ return [
     "team"  => [
         "it_team"               => "IT チーム",
         "it_team_work"          => "IT Team make ...................................",
-        
+
         "donation_check"        => "寄付金額管理",
         "donation_check_work"   => "Donation Income Check makes the.... Donation Income Check makes the....",
 
@@ -101,12 +111,23 @@ return [
 
     "contact_title"  => "お問い合わせ",
 
-    "footer"   => [
-        "label_1"   => "MDSG と称するミャンマー開発支援グープは在日ミャンマー人14名により立ち上げられたボランティアグループである。",
-        "label_2"   => "The group was formed on 5th February, 2021 after the military coup on 1st February in order to support those who are in need during the crisis.",
-        "label_3"   => "Please, follow our Social Media.",
+    "department" => [
+        'health'    => "Health",
+        "education" => "Education",
+        "transport" => "Transportation",
+        "other"     => "Other",
+        "all"       => "All Department",
+        "organization"  => "Organization",
+        "engineer"      => "Engineer"
+    ],
 
-        "contact"   => "お問い合わせ",
-        "mail"      => "メール",
-    ]
+    "note"  => "မှတ်ချက်",
+    "chart_title"   => "နယ်ပယ်အလိုက်ဖြန့်ဝေပုံ",
+    "chart_other"   => "တစ်ခြားဌာန = ဌာနအမည်အတိအကျရရှိသော်လည်း ထုတ်ဖော်ရန် မသင့်သော ဌာနများ",
+    "chart_edu"     => "ပညာရေး = ပညာရေး နှင့်ပက်သက်သော ဝန်ထမ်းများအားလုံး",
+    "chart_health"  => "ကျန်းမာရေး = ကျန်းမာရေး နှင့်ပက်သက်သော ဝန်ထမ်းများအားလုံး",
+    "chart_transport"   =>  "ပို့ဆောင်ရေး = ပို့ဆောင်ရေး နှင့်ပက်သက်သော ဝန်ထမ်းများအားလုံး",
+    "chart_all"     => "ဌာနစုံ = ဌာနစုံမှအဖွဲ့အစည်းများ",
+    "chart_org"     => "အဖွဲ့အစည်းများ = တခြားကူညီသူ အဖွဲ့အစည်းများထံ ပေးအပ်မှု",
+    "chart_eng"     => "အင်ဂျင်နီယာ = အင်ဂျင်နီယာလုပ်ငန်းဆိုင်ရာ ဝန်ထမ်းများ",
 ];

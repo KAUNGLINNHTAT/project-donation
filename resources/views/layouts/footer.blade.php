@@ -11,18 +11,18 @@
                 <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">M D S G</span>
             </a>
             <div class="mt-4 lg:max-w-sm">
-                <p class="text-sm text-gray-800">{{ __('messages.footer.label_1') }}</p>
+                <p class="text-sm text-gray-800">{{ __('messages.label.label_1') }}</p>
                 {{-- <p class="mt-4 text-sm text-gray-800">{{ __('messages.footer.label_2') }}</p> --}}
             </div>
         </div>
         <div class="space-y-2 text-sm">
-            <p class="text-base font-bold tracking-wide text-gray-900">{{ __('messages.footer.contact') }}</p>
+            <p class="text-base font-bold tracking-wide text-gray-900">{{ __('messages.label.contact') }}</p>
             {{-- <div class="flex">
                 <p class="mr-1 text-gray-800">Phone:</p>
                 <a href="tel:850-123-5021" aria-label="Our phone" title="Our phone" class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">850-123-5021</a>
             </div> --}}
             <div class="flex">
-                <p class="mr-1 text-gray-800">{{ __('messages.footer.mail') }}:</p>
+                <p class="mr-1 text-gray-800">{{ __('messages.label.mail') }}:</p>
                 <a href="mailto:info@lorem.mail" aria-label="Our email" title="Our email" class="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800">japan.mdsg@gmail.com</a>
             </div>
             {{-- <div class="flex">
@@ -56,7 +56,7 @@
                     </svg>
                 </a>
             </div>
-            <p class="mt-4 text-sm text-gray-500">{{ __('messages.footer.label_3')}}</p>
+            <p class="mt-4 text-sm text-gray-500">{{ __('messages.label.follow_social')}}</p>
         </div>
     </div>
 

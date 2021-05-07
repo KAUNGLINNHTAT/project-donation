@@ -11,6 +11,9 @@
         <p class="pr-5 mb-5 text-base text-gray-700 md:text-lg">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. explicabo.
         </p>
+        <div class="flex items-center">
+            <a href="/apply" class="inline-flex items-center border border-gray-300 rounded-lg justify-center h-12 px-6 mr-6 font-medium tracking-wide text-gray-800 transition duration-200 rounded shadow-md hover:bg-gray-700 hover:text-gray-100 focus:shadow-outline focus:outline-none">Apply Now</a>
+        </div>
     </div>
   </div>
 </div>

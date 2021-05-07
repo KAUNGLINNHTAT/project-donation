@@ -23,6 +23,10 @@ class IndexController extends Controller
         return view('contact');
     }
 
+    public function apply() {
+        return view('apply');
+    }
+
     public function translate(Request $request) {
         $locale = $request->get('locale');
         $support_language = config('constants.support_language');

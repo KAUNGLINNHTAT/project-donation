@@ -37,8 +37,9 @@ return [
         "send_msg"  => "Send Message",
     ],
 
-    
     "label" => [
+        "what_is_mdsg"  => "What is M D S G",
+        "go_to_detail"  => "Learn more",
         "donation_type" => "Donation Types",
         "donation_accept" => "We are accepting individual support and group support.",
 
@@ -64,6 +65,14 @@ return [
         "issue_amount"  => "Issue Amount",
         "support_amount" => "Support Amount",
         "total_amount" => "Total Amount",
+
+        "label_1"   => "Myanmar Development Support Group (MDSG) is volunteer group formed by 14 members of Myanmar citizens residing in Japan.  ",
+        "label_2"   => "The group was formed on 5th February, 2021 after the military coup on 1st February in order to support those who are in need during the crisis.",
+        "label_3"   => "Please see the group activities layout and team structure.",
+
+        "contact"   => "Contacts",
+        "mail"      => "Mail",
+        "follow_social" => "Please, follow our Social Media.",
     ],
 
     "about" => [
@@ -74,7 +83,7 @@ return [
     "team"  => [
         "it_team"               => "IT Team",
         "it_team_work"          => "IT Team make ...................................",
-        
+
         "donation_check"        => "Donation Income Check",
         "donation_check_work"   => "Donation Income Check makes the....",
 
@@ -102,12 +111,24 @@ return [
 
     "contact_title"  => "Contact Us",
 
-    "footer"   => [
-        "label_1"   => "Myanmar Development Support Group (MDSG) is volunteer group formed by 14 members of Myanmar citizens residing in Japan.  ",
-        "label_2"   => "The group was formed on 5th February, 2021 after the military coup on 1st February in order to support those who are in need during the crisis.",
-        "label_3"   => "Please, follow our Social Media.",
+    "department" => [
+        'health'    => "Health",
+        "education" => "Education",
+        "transport" => "Transportation",
+        "other"     => "Other",
+        "all"       => "All Department",
+        "organization"  => "Organization",
+        "engineer"      => "Engineer"
+    ],
 
-        "contact"   => "Contacts",
-        "mail"      => "Mail",
-    ]
+    "note"  => "မှတ်ချက်",
+    "chart_title"   => "နယ်ပယ်အလိုက်ဖြန့်ဝေပုံ",
+    "chart_other"   => "တစ်ခြားဌာန = ဌာနအမည်အတိအကျရရှိသော်လည်း ထုတ်ဖော်ရန် မသင့်သော ဌာနများ",
+    "chart_edu"     => "ပညာရေး = ပညာရေး နှင့်ပက်သက်သော ဝန်ထမ်းများအားလုံး",
+    "chart_health"  => "ကျန်းမာရေး = ကျန်းမာရေး နှင့်ပက်သက်သော ဝန်ထမ်းများအားလုံး",
+    "chart_transport"   =>  "ပို့ဆောင်ရေး = ပို့ဆောင်ရေး နှင့်ပက်သက်သော ဝန်ထမ်းများအားလုံး",
+    "chart_all"     => "ဌာနစုံ = ဌာနစုံမှအဖွဲ့အစည်းများ",
+    "chart_org"     => "အဖွဲ့အစည်းများ = တခြားကူညီသူ အဖွဲ့အစည်းများထံ ပေးအပ်မှု",
+    "chart_eng"     => "အင်ဂျင်နီယာ = အင်ဂျင်နီယာလုပ်ငန်းဆိုင်ရာ ဝန်ထမ်းများ",
+
 ];

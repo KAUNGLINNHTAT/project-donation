@@ -1,4 +1,4 @@
-<div class="px-4 py-4 md:py-8  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+<div class="px-4 py-4 md:py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
     <div class="grid gap-5 row-gap-8 lg:grid-cols-2">
         <div class="flex ">
             <div class="w-full pr-2 md:pr-5 lg:py-6 mb-6 lg:mb-0">
@@ -7,19 +7,19 @@
                        
                 <div class="flex py-2">
                     <img src="icon/play.svg" class="flex fill-current text-gray-500 w-6 h-6 mr-2 pt-1">
-                    <span class="text-gray-500 text-justify break-words">{{ __('messages.label.table_msg1') }}</span>
+                    <span class="text-gray-500 text-sm md:text-base text-justify break-words pr-4">{{ __('messages.label.table_msg1') }}</span>
                 </div>
                 <div class="flex py-2">
                     <img src="icon/play.svg" class="flex fill-current text-gray-500 w-6 h-6 mr-2 pt-1">
-                    <span class="text-gray-500 text-justify break-words">{{ __('messages.label.table_msg2') }}</span>
+                    <span class="text-gray-500 text-sm md:text-base text-justify break-words pr-4">{{ __('messages.label.table_msg2') }}</span>
                 </div>
                 <div class="flex py-2">
                     <img src="icon/play.svg" class="flex fill-current text-gray-500 w-6 h-6 mr-2 pt-1">
-                    <span class="text-gray-500 text-justify break-words">{{ __('messages.label.table_msg3') }}</span>
+                    <span class="text-gray-500 text-sm md:text-base text-justify break-words pr-4">{{ __('messages.label.table_msg3') }}</span>
                 </div>
                 <div class="flex py-2">
                     <img src="icon/play.svg" class="flex fill-current text-gray-500 w-6 h-6 mr-2 pt-1">
-                    <span class="text-gray-500 text-justify break-words">{{ __('messages.label.table_msg4') }}</span>
+                    <span class="text-gray-500 text-sm md:text-base text-justify break-words pr-4">{{ __('messages.label.table_msg4') }}</span>
                 </div>
             </div>
         </div>

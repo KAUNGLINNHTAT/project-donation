@@ -2,7 +2,7 @@
 
 @section('content')
 
-<section class="text-gray-600 body-font relative">
+<section class="text-gray-600 body-font">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-col text-center w-full mb-12">
       <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">{{ __('messages.contact_title') }}</h1>
@@ -29,7 +29,8 @@
           </div>
         </div>
         <div class="p-2 w-full">
-          <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">{{ __('messages.button.send_msg') }}</button>
+
+          <button class="flex mx-auto text-white bg-gray-700 border-0 py-2 px-8 focus:outline-none hover:bg-gray-600 rounded text-lg">{{ __('messages.button.send_msg') }}</button>
         </div>
       </div>
     </div>

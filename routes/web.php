@@ -21,6 +21,7 @@ Route::get('index', [\App\Http\Controllers\IndexController::class, 'index'])->na
 Route::get('gallery', [\App\Http\Controllers\IndexController::class, 'gallery'])->name('web.gallery')->middleware('translate');
 Route::get('about', [\App\Http\Controllers\IndexController::class, 'about'])->name('web.about')->middleware('translate');
 Route::get('contact', [\App\Http\Controllers\IndexController::class, 'contact'])->name('web.contact')->middleware('translate');
+Route::get('apply', [\App\Http\Controllers\IndexController::class, 'apply'])->name('web.apply')->middleware('translate');
 
 Route::get('translate', [\App\Http\Controllers\IndexController::class, 'translate'])->name('web.translate');
 
