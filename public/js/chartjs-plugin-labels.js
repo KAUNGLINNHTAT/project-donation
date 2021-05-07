@@ -52,8 +52,8 @@
         this.options = Object.assign({
             position: 'default',
             precision: 0,
-            fontSize: chartOptions.defaultFontSize,
-            fontColor: "#666",
+            fontSize: "12",
+            fontColor: "#FFF",
             fontStyle: "normal",
             fontFamily: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
             shadowOffsetX: 3,
@@ -183,10 +183,7 @@
     };
 
     Label.prototype.shouldRenderToElement = function (meta, element) {
-        return !meta.hidden && !element.hidden && (
-            this.options.showZero ||
-                this.chart.config.type === 'polarArea' ? element.outerRadius !== 0 : element.circumference !== 0
-        );
+        return true;
     };
 
     Label.prototype.getLabel = function (dataset, element, index) {
@@ -212,7 +209,8 @@
                     break;
                 case 'percentage':
                 default:
-                    label = this.getPercentage(dataset, element, index) + '%';
+                    label = dataset.data[index] + "%";
+                    //label = this.getPercentage(dataset, element, index) + '%';
                     break;
             }
         }

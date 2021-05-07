@@ -26,13 +26,6 @@
 
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
-    <style>
-#chartdiv {
-  width: 100%;
-  height: 300px;
-}
-
-</style>
 </head>
 <body class="bg-white antialiased font-sans">
     <div id="app"></div>
