@@ -1,113 +1,46 @@
-<div class="px-4 py-4 md:py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
-    <div class="grid gap-5 row-gap-8 lg:grid-cols-2">
-        <div class="flex ">
-            <div class="w-full pr-2 md:pr-5 lg:py-6 mb-6 lg:mb-0">
-                <h2 class="text-sm title-font text-gray-500 tracking-widest">Support For</h2>
-                <h1 class="text-gray-900 text-3xl title-font font-medium mb-4">February and March</h1>
-                       
-                <div class="flex py-2">
-                    <img src="icon/play.svg" class="flex fill-current text-gray-500 w-6 h-6 mr-2 pt-1">
-                    <span class="text-gray-500 text-sm md:text-base text-justify break-words pr-4">{{ __('messages.label.table_msg1') }}</span>
-                </div>
-                <div class="flex py-2">
-                    <img src="icon/play.svg" class="flex fill-current text-gray-500 w-6 h-6 mr-2 pt-1">
-                    <span class="text-gray-500 text-sm md:text-base text-justify break-words pr-4">{{ __('messages.label.table_msg2') }}</span>
-                </div>
-                <div class="flex py-2">
-                    <img src="icon/play.svg" class="flex fill-current text-gray-500 w-6 h-6 mr-2 pt-1">
-                    <span class="text-gray-500 text-sm md:text-base text-justify break-words pr-4">{{ __('messages.label.table_msg3') }}</span>
-                </div>
-                <div class="flex py-2">
-                    <img src="icon/play.svg" class="flex fill-current text-gray-500 w-6 h-6 mr-2 pt-1">
-                    <span class="text-gray-500 text-sm md:text-base text-justify break-words pr-4">{{ __('messages.label.table_msg4') }}</span>
-                </div>
+<div class="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
+    <div class="grid gap-10 lg:grid-cols-2">
+        <div class="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg">
+            <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-teal-accent-400">
+                {{--  <svg class="text-teal-900 w-7 h-7" viewBox="0 0 24 24">
+                <polyline fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" points=" 8,5 8,1 16,1 16,5" stroke-linejoin="round"></polyline>
+                <polyline fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" points="9,15 1,15 1,5 23,5 23,15 15,15" stroke-linejoin="round"></polyline>
+                <polyline fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" points="22,18 22,23 2,23 2,18" stroke-linejoin="round"></polyline>
+                <rect x="9" y="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" width="6" height="4" stroke-linejoin="round"></rect>
+                </svg>  --}}
+                <svg class="w-8 text-deep-purple-accent-400" viewBox="0 0 24 24" stroke-linejoin="round" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke="currentColor" fill="none">
+                    <rect x="3" y="1" width="7" height="12"></rect>
+                    <rect x="3" y="17" width="7" height="6"></rect>
+                    <rect x="14" y="1" width="7" height="6"></rect>
+                    <rect x="14" y="11" width="7" height="12"></rect>
+                </svg>
             </div>
+        <div class="max-w-xl mb-6">
+            <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">{{ __('messages.label.what_is_mdsg') }}</h2>
+            <p class="text-base text-gray-700 text-justify ">
+                {{ __('messages.label.label_1')}} {{ __('messages.label.label_2')}} {{ __('messages.label.label_3')}}
+            </p>
         </div>
         <div>
-            <p class="text-center text-gray-800 py-3">This table showed the support for February and March.</p>
-            <table class="leading-normal border-collapse border-gray-200">
-                <thead>
-                    <tr>
-                        <th scope="col" class="w-1/12 px-5 py-3 bg-white border border-gray-200 text-gray-800 text-left text-sm uppercase font-normal">#</th>
-                        <th scope="col" class="w-3/12 px-5 py-3 bg-white border border-gray-200 text-gray-800 text-left text-sm uppercase font-normal">{{ __('messages.label.issue_date') }}</th>
-                        <th scope="col" class="w-3/12 px-5 py-3 bg-white border border-gray-200 text-gray-800 text-left text-sm uppercase font-normal">{{ __('messages.label.issue_amount') }}</th>
-                        <th scope="col" class="w-3/12 px-5 py-3 bg-white border border-gray-200 text-gray-800 text-left text-sm uppercase font-normal">{{ __('messages.label.support_amount') }}</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="px-4 py-3 border border-gray-200 bg-white text-sm">1</td>
-                        <td class="px-4 py-3 border border-gray-200 bg-white text-sm"><p class="text-gray-900 whitespace-no-wrap">2021/02/12</p></td>
-                        <td class="px-4 py-3 border border-gray-200 bg-white text-sm"><p class="text-gray-900 whitespace-no-wrap">60</p></td>
-                        <td class="px-4 py-3 border border-gray-200 bg-white text-sm"><p class="text-gray-900 whitespace-no-wrap">60</p></td>
-                    </tr>
-                    <tr>
-                        <td class="px-4 py-3 border border-gray-200 bg-white text-sm">2</td>
-                        <td class="px-4 py-3 border border-gray-200 bg-white text-sm"><p class="text-gray-900 whitespace-no-wrap">2021/02/14</p></td>
-                        <td class="px-4 py-3 border border-gray-200 bg-white text-sm"><p class="text-gray-900 whitespace-no-wrap">140</p></td>
-                        <td class="px-4 py-3 border border-gray-200 bg-white text-sm"><p class="text-gray-900 whitespace-no-wrap">140</p></td>
-                    </tr>
-                    <tr>
-                        <td class="px-4 py-3 border border-gray-200 bg-white text-sm">3</td>
-                        <td class="px-4 py-3 border border-gray-200 bg-white text-sm"><p class="text-gray-900 whitespace-no-wrap">2021/02/16</p></td>
-                        <td class="px-4 py-3 border border-gray-200 bg-white text-sm"><p class="text-gray-900 whitespace-no-wrap">126</p></td>
-                        <td class="px-4 py-3 border border-gray-200 bg-white text-sm"><p class="text-red-900 whitespace-no-wrap">115</p></td>
-                    </tr>
-                    <tr>
-                        <td class="px-4 py-3 border border-gray-200 bg-white text-sm">4</td>
-                        <td class="px-4 py-3 border border-gray-200 bg-white text-sm"><p class="text-gray-900 whitespace-no-wrap">2021/02/20</p></td>
-                        <td class="px-4 py-3 border border-gray-200 bg-white text-sm"><p class="text-gray-900 whitespace-no-wrap">252</p></td>
-                        <td class="px-4 py-3 border border-gray-200 bg-white text-sm"><p class="text-gray-900 whitespace-no-wrap">252</p></td>
-                    </tr>
-                    <tr>
-                        <td class="px-4 py-3 border border-gray-200 bg-white text-sm">5</td>
-                        <td class="px-4 py-3 border border-gray-200 bg-white text-sm"><p class="text-gray-900 whitespace-no-wrap">2021/02/25</p></td>
-                        <td class="px-4 py-3 border border-gray-200 bg-white text-sm"><p class="text-gray-900 whitespace-no-wrap">135</p></td>
-                        <td class="px-4 py-3 border border-gray-200 bg-white text-sm"><p class="text-gray-900 whitespace-no-wrap">135</p></td>
-                    </tr>
-                    <tr>
-                        <td class="px-4 py-3 border border-gray-200 bg-white text-sm">6</td>
-                        <td class="px-4 py-3 border border-gray-200 bg-white text-sm"><p class="text-gray-900 whitespace-no-wrap">2021/02/27</p></td>
-                        <td class="px-4 py-3 border border-gray-200 bg-white text-sm"><p class="text-gray-900 whitespace-no-wrap">138</p></td>
-                        <td class="px-4 py-3 border border-gray-200 bg-white text-sm"><p class="text-red-900 whitespace-no-wrap">107</p></td>
-                    </tr>
-                    <tr>
-                        <td class="px-4 py-3 border border-gray-200 bg-white text-sm">7</td>
-                        <td class="px-4 py-3 border border-gray-200 bg-white text-sm"><p class="text-gray-900 whitespace-no-wrap">2021/03/06</p></td>
-                        <td class="px-4 py-3 border border-gray-200 bg-white text-sm"><p class="text-gray-900 whitespace-no-wrap">337.6</p></td>
-                        <td class="px-4 py-3 border border-gray-200 bg-white text-sm"><p class="text-red-900 whitespace-no-wrap">318.6</p></td>
-                    </tr>
-                    <tr>
-                        <td class="px-4 py-3 border border-gray-200 bg-white text-sm">8</td>
-                        <td class="px-4 py-3 border border-gray-200 bg-white text-sm"><p class="text-gray-900 whitespace-no-wrap">2021/03/09</p></td>
-                        <td class="px-4 py-3 border border-gray-200 bg-white text-sm"><p class="text-gray-900 whitespace-no-wrap">40</p></td>
-                        <td class="px-4 py-3 border border-gray-200 bg-white text-sm"><p class="text-gray-900 whitespace-no-wrap">40</p></td>
-                    </tr>
-                    <tr>
-                        <td class="px-4 py-3 border border-gray-200 bg-white text-sm">9</td>
-                        <td class="px-4 py-3 border border-gray-200 bg-white text-sm"><p class="text-gray-900 whitespace-no-wrap">2021/03/13</p></td>
-                        <td class="px-4 py-3 border border-gray-200 bg-white text-sm"><p class="text-gray-900 whitespace-no-wrap">143</p></td>
-                        <td class="px-4 py-3 border border-gray-200 bg-white text-sm"><p class="text-gray-900 whitespace-no-wrap">143</p></td>
-                    </tr>
-                    <tr>
-                        <td class="px-4 py-3 border border-gray-200 bg-white text-sm">10</td>
-                        <td class="px-4 py-3 border border-gray-200 bg-white text-sm"><p class="text-gray-900 whitespace-no-wrap">2021/03/20</p></td>
-                        <td class="px-4 py-3 border border-gray-200 bg-white text-sm"><p class="text-gray-900 whitespace-no-wrap">168.35</p></td>
-                        <td class="px-4 py-3 border border-gray-200 bg-white text-sm"><p class="text-red-900 whitespace-no-wrap">148</p></td>
-                    </tr>
-                    <tr>
-                        <td class="px-4 py-3 border border-gray-200 bg-white text-sm">11</td>
-                        <td class="px-4 py-3 border border-gray-200 bg-white text-sm"><p class="text-gray-900 whitespace-no-wrap">2021/03/27</p></td>
-                        <td class="px-4 py-3 border border-gray-200 bg-white text-sm"><p class="text-gray-900 whitespace-no-wrap">144.5</p></td>
-                        <td class="px-4 py-3 border border-gray-200 bg-white text-sm"><p class="text-gray-900 whitespace-no-wrap">144.5</p></td>
-                    </tr>
-                    <tr>
-                        <td class="px-4 py-3 border border-gray-200 bg-white text-sm"></td>
-                        <td colspan="2" class="px-4 py-3 border border-gray-200 bg-white text-sm"><p class="text-gray-900 whitespace-no-wrap">{{ __('messages.label.total_amount') }}</p></td>
-                        <td class="px-4 py-3 border border-gray-200 bg-white text-sm"><p class="text-gray-900 whitespace-no-wrap">1,603.1</p></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+        <a href="/about" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">
+            {{ __('messages.label.go_to_detail')}}
+            <svg class="inline-block w-3 ml-2" fill="currentColor" viewBox="0 0 12 12">
+                <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z"></path>
+            </svg>
+        </a>
+      </div>
     </div>
+    <div class="flex items-center justify-center -mx-4 lg:pl-8">
+      <div class="flex flex-col items-end px-3">
+        <img class="object-cover mb-6 rounded shadow-lg h-28 sm:h-48 xl:h-56 w-28 sm:w-48 xl:w-56"
+          src="https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+          alt=""
+        />
+        <img class="object-cover w-20 h-20 rounded shadow-lg sm:h-32 xl:h-40 sm:w-32 xl:w-40" src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="" />
+      </div>
+      <div class="px-3">
+        <img class="object-cover w-40 h-40 rounded shadow-lg sm:h-64 xl:h-80 sm:w-64 xl:w-80" src="https://images.pexels.com/photos/3182739/pexels-photo-3182739.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500" alt="" />
+      </div>
+    </div>
+  </div>
 </div>

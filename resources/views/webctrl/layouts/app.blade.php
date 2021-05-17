@@ -18,12 +18,12 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body class="bg-gray-100 h-screen antialiased leading-none font-sans">
-    <div id="app">
-        <div class="md:flex flex-col md:flex-row md:min-h-screen w-full">
-            <header-component></header-component>
-            {{-- <navbar-component></navbar-component> --}}
-            <router-view />
-        </div>
-    </div>
+    <div id="app"></div>
+
+
+    @yield('content')
+        {{-- <div class="md:flex flex-col md:flex-row md:min-h-screen w-full">
+
+        </div> --}}
 </body>
 </html>

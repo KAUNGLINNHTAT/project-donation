@@ -35,9 +35,11 @@ Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->nam
 
 Route::group(['prefix' => 'admin'], function () {
 
-    Route::get('/', function () {
-        return view('webctrl.layouts.app');
-    })->where('any', '*');
+    Route::get('/', [\App\Http\Controllers\Admin\DashboardController::class, 'index'])->name('admin.dashboard');
+
+    // Route::get('/', function () {
+    //     return view('webctrl.layouts.app');
+    // })->where('any', '*');
     // Route::get('certificate', [\App\Http\Controllers\Admin\CertificateController::class, 'index'])->name('certificate');
     // Route::get('certificate/show/{id}', [\App\Http\Controllers\Admin\CertificateController::class, 'show'])->name('certificate.show');
     // Route::get('certificate/delete/{id}', [\App\Http\Controllers\Admin\CertificateController::class, 'delete'])->name('certificate.delete');

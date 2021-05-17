@@ -111,24 +111,6 @@ return [
 
     "contact_title"  => "Contact Us",
 
-    "department" => [
-        'health'    => "Health",
-        "education" => "Education",
-        "transport" => "Transportation",
-        "other"     => "Other",
-        "all"       => "All Department",
-        "organization"  => "Organization",
-        "engineer"      => "Engineer"
-    ],
-
-    "note"  => "မှတ်ချက်",
+    "note"  => "Note",
     "chart_title"   => "နယ်ပယ်အလိုက်ဖြန့်ဝေပုံ",
-    "chart_other"   => "တစ်ခြားဌာန = ဌာနအမည်အတိအကျရရှိသော်လည်း ထုတ်ဖော်ရန် မသင့်သော ဌာနများ",
-    "chart_edu"     => "ပညာရေး = ပညာရေး နှင့်ပက်သက်သော ဝန်ထမ်းများအားလုံး",
-    "chart_health"  => "ကျန်းမာရေး = ကျန်းမာရေး နှင့်ပက်သက်သော ဝန်ထမ်းများအားလုံး",
-    "chart_transport"   =>  "ပို့ဆောင်ရေး = ပို့ဆောင်ရေး နှင့်ပက်သက်သော ဝန်ထမ်းများအားလုံး",
-    "chart_all"     => "ဌာနစုံ = ဌာနစုံမှအဖွဲ့အစည်းများ",
-    "chart_org"     => "အဖွဲ့အစည်းများ = တခြားကူညီသူ အဖွဲ့အစည်းများထံ ပေးအပ်မှု",
-    "chart_eng"     => "အင်ဂျင်နီယာ = အင်ဂျင်နီယာလုပ်ငန်းဆိုင်ရာ ဝန်ထမ်းများ",
-
 ];

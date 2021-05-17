@@ -1,6 +1,6 @@
 
 
-import router from './router';
+//import router from './router';
 window.Vue = require('vue').default;
 window.axios = require('axios');
 Vue.prototype.$http = window.axios;
@@ -19,5 +19,5 @@ Vue.component('modal-success', SuccessModal).default;
 
 const app = new Vue({
     el: '#app',
-    router: router
+    //router: router
 });
